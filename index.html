@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>vecka.nu</title>
+    <meta name="description" content="tukla.nu ger dig svar på om du ska tukla eller inte!">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="http://tukla.nu/">
+    <meta property="og:title" content="tukla.nu">
+    <meta property="og:description" content="tukla.nu ger dig svar på om du ska tukla eller inte!">
+    <link id="favicon" rel="icon" type="image/png" href="favicon.png">
+    <style>
+        html, body { height: 100%; background-color: #90c0de; overflow: hidden; }
+        #answer {
+            position: absolute;
+            top: 50%;
+            left: 0;
+            right: 0;
+            margin: -110px 0 0 0;
+            height: 220px;
+            text-align: center;
+            color: #1c7bb7;
+            font-family: Arial, serif;
+            font-size: 260px;
+            line-height: 227px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div id="answer"></div>
+    <script>
+        (function () {
+            var answer = Math.random() > 0.92 ? "Ja" : "Nej";
+            document.getElementById('answer').innerText = answer;
+        })();
+    </script>
+</body>
+</html>
